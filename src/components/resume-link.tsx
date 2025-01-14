@@ -8,7 +8,7 @@ export default function ResumeLink() {
         isBlock
         showAnchorIcon
         underline="hover"
-        href="/VictorLiResume.pdf"
+        href="https://nbviewer.org/github/SayanoSong/victorli.github.io/blob/master/src/asset/VictorLiResume.pdf"
         className="text-blue-100 dark:text-yellow"
         target="_blank"
       >
