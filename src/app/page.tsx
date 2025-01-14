@@ -13,11 +13,10 @@ import { Image, Link } from "@nextui-org/react";
 import GmailIcon from "../asset/gmail.png";
 import linkedIcon from "@/asset/linkedin.png";
 import phoneIcon from "@/asset/phone.png";
-import { GlowCapture } from "@codaworks/react-glow";
 export default function Home() {
   return (
     <>
-      <GlowCapture className="lg:grid lg:gap-4 lg:grid-cols-2 px-6 max-w-screen-xl mx-auto">
+      <div className="lg:grid lg:gap-4 lg:grid-cols-2 px-6 max-w-screen-xl mx-auto">
         <div className="lg:sticky lg:top-0 max-h-screen flex flex-col py-12  h-max ">
           <NameCard></NameCard>
           <Navigator></Navigator>
@@ -50,7 +49,7 @@ export default function Home() {
           <ResumeLink></ResumeLink>
           <Projects id="projects" projectData={projectData}></Projects>
         </div>
-      </GlowCapture>
+      </div>
       <ThemeSwitcher></ThemeSwitcher>
     </>
   );

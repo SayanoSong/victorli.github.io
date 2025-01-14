@@ -3,6 +3,7 @@ import remarkGfm from "remark-gfm";
 import createMDX from "@next/mdx";
 const nextConfig: NextConfig = {
   /* config options here */
+
   output: "export",
   basePath: "/victorli.github.io",
   images: {
@@ -10,7 +11,6 @@ const nextConfig: NextConfig = {
   },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   webpack: (config, { isServer }) => {
-    // Add a rule to handle PDF files
     config.module.rules.push({
       test: /\.(pdf)$/,
       use: [
@@ -25,7 +25,6 @@ const nextConfig: NextConfig = {
     });
 
     if (!isServer) {
-      // Ensure that the file-loader is applied to the client as well
       config.resolve.fallback.fileSystem = false;
     }
 
