@@ -1,7 +1,8 @@
 {
-  "name": "sayaweb",
+  "name": "victorliweb",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sayanosong.github.io/victorli.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
