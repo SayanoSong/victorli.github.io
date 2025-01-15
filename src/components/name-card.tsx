@@ -1,9 +1,8 @@
 export default function NameCard() {
   const fullName = "Xiayu Li";
   const title = "Full Stack Developer";
-  const description =
-    "Language is not a barrier to learning, and passion is the greatest driving force.";
-
+  const description1 = "Language is not a barrier to learning";
+  const description2 = "Passion is the greatest driving force";
   return (
     <div
       color="purple"
@@ -11,7 +10,8 @@ export default function NameCard() {
     >
       <p className="text-4xl font-serif font-bold ">{fullName}</p>
       <p className="text-xl font-serif font-medium mt-2">{title}</p>
-      <p className="base font-serif mt-2">{description}</p>
+      <p className="base font-serif mt-2">{description1}</p>
+      <p className="base font-serif mt-2">{description2}</p>
     </div>
   );
 }
