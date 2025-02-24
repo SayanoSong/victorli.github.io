@@ -1,4 +1,5 @@
 "use client";
+import { ProjectsProps } from "@/authentication/interfaces";
 import {
   Card,
   CardBody,
@@ -9,17 +10,6 @@ import {
   Link,
 } from "@nextui-org/react";
 import { Element } from "react-scroll";
-
-interface ProjectsProps {
-  id: string;
-  projectData: projectDataType[];
-}
-type projectDataType = {
-  projectName: string;
-  description: string;
-  url: string;
-  skills?: string[];
-};
 
 export default function Projects(props: ProjectsProps) {
   return (

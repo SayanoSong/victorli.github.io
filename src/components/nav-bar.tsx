@@ -2,6 +2,7 @@
 import { Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { sections } from "@/data/nav-data";
 
 export default function Navigator() {
   const spanStyle =
@@ -14,28 +15,22 @@ export default function Navigator() {
     setCurrSection(section);
   };
   useEffect(() => {
-    const sectionIds: string[] = [
-      "about",
-      "experience",
-      "education",
-      "projects",
-    ];
-    if (sectionIds.length < 1) {
+    if (sections.length < 1) {
       return;
     }
-    setCurrSection(sectionIds[0]);
+    setCurrSection(sections[0]);
     const scroll = () => {
-      for (let index = 0; index < sectionIds.length; index++) {
-        const sectionId: string = sectionIds[index];
+      for (let index = 0; index < sections.length; index++) {
+        const sectionId: string = sections[index];
         const section = document.getElementById(sectionId);
         if (section) {
           const bottomY = section.offsetTop + section.offsetHeight;
           const offset = window.innerHeight / 15;
           if (bottomY - offset < window.scrollY) {
-            if (index + 1 >= sectionIds.length) {
+            if (index + 1 >= sections.length) {
               setCurrSection(sectionId);
             } else {
-              setCurrSection(sectionIds[index + 1]);
+              setCurrSection(sections[index + 1]);
             }
           } else {
             setCurrSection(sectionId);

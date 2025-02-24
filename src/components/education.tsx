@@ -1,19 +1,7 @@
 "use client";
 import { Element } from "react-scroll";
-
-interface EducationProps {
-  id: string;
-  schoolData: schoolDataType;
-}
-
-type schoolDataType = {
-  school: string;
-  degree: string;
-  startDate: string;
-  location: string;
-  endDate: string;
-  details: string[];
-};
+import { EducationProps } from "@/authentication/interfaces";
+import { schoolDataType } from "@/authentication/types";
 
 export default function Education(props: EducationProps) {
   const schoolObj: schoolDataType = props.schoolData;

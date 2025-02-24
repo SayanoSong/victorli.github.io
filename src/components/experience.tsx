@@ -1,20 +1,7 @@
 "use client";
 import { Element } from "react-scroll";
 import { Chip } from "@nextui-org/react";
-interface ExperienceProps {
-  id: string;
-  workData: workDataType[];
-}
-
-type workDataType = {
-  title: string;
-  company: string;
-  location: string;
-  startDate: string;
-  endDate: string;
-  details: string[];
-  tags?: string[];
-};
+import { ExperienceProps } from "@/authentication/interfaces";
 
 export default function Experience(props: ExperienceProps) {
   return (
