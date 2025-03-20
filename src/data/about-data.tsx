@@ -6,7 +6,7 @@ export const aboutData = [
     appealing but also optimized for performance, scalability, and user \
     friendly.",
   "As a graduated Honours Bachelor of Computer Science student at the \
-    University of Ottawa who was awarded to the dean&apos;s list, with a \
+    University of Ottawa who was awarded to the dean's honour list, with a \
     strong foundation in full-stack development and hands-on experience \
     gained through the 2 years CO-OP program experience, I am passionate \
     about exploring and experimenting with different cutting-edge \
