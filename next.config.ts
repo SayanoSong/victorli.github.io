@@ -3,6 +3,17 @@ import remarkGfm from "remark-gfm";
 import createMDX from "@next/mdx";
 const nextConfig: NextConfig = {
   /* config options here */
+  /*
+  async redirects() {
+    return [
+      //Home page
+      {
+        source: '/portfolio',
+        destination: '/',
+        permanent: true,
+      }
+    ]
+  }*/
 
   output: "export",
   basePath: "/victorli.github.io",

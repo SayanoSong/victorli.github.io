@@ -13,6 +13,7 @@
     "@codaworks/react-glow": "^1.0.6",
     "@next/mdx": "^15.1.4",
     "@nextui-org/react": "^2.6.10",
+    "@react-email/components": "^0.0.34",
     "file-loader": "^6.2.0",
     "framer-motion": "^11.15.0",
     "next": "15.1.3",
