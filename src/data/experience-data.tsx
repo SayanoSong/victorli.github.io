@@ -10,7 +10,7 @@ export const workData = [
       "Contributed to the development of muti-dimensional table with canvas to implement a high-performance table.",
       "Working on transforming MPA application to SPA application.",
     ],
-    tags: ["Java", "JavaScript", "Junit", "React", "Agile", "CI/CD"],
+    tags: ["Vue3", "JavaScript", "TypeScript", "PHP", "Canvas", "Vite"],
   },
   {
     title: "Full Stack Software Developer",
