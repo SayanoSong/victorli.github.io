@@ -1,6 +1,19 @@
 export const workData = [
   {
     title: "Full Stack Software Developer",
+    company: "Integle",
+    location: "Shanghai, China",
+    startDate: "April 2025",
+    endDate: "Present",
+    details: [
+      "Combined MPA application and SPA application in Vue3.",
+      "Contributed to the development of muti-dimensional table with canvas to implement a high-performance table.",
+      "Working on transforming MPA application to SPA application.",
+    ],
+    tags: ["Java", "JavaScript", "Junit", "React", "Agile", "CI/CD"],
+  },
+  {
+    title: "Full Stack Software Developer",
     company: "Ross Video Ltd.",
     location: "Ottawa, ON",
     startDate: "May 2023",
